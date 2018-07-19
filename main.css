@@ -704,6 +704,11 @@
       height: inherit !important;
   }
 
+  .user_avatar img {
+      border: 1px solid var(--silver);
+      border-radius: 3px;
+  }
+
   
   /* Module: Style */
   
@@ -811,6 +816,14 @@
       .block__scrollable {
           overflow-x: scroll;
       }
+
+      fieldset[id*="uid_"] {
+          width: 100% !important;
+      }
+
+      .user_avatar {
+          text-align: center;
+      }
   }
   
   @media screen and (min-width: 790px) and (max-width: 1250px) {
@@ -913,11 +926,7 @@
           margin-right: 20px;
       }
   
-      .user_avatar img {
-          border: 1px solid var(--silver);
-          border-radius: 3px;
-      }
-  
+       
       .block__column, .block__row td, .block__row th {
           padding: 8px 18px !important;
       }
