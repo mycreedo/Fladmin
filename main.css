@@ -48,7 +48,7 @@
   }
   
   a {
-      color: var(--gray-dark);
+      color: var(--midnigt);
       text-decoration: none;
       transition: .25s;
   }
@@ -386,9 +386,6 @@
   
   .segmented-control {
       display: inline-flex;
-  }
-  
-  .segmented-control__option {
   }
   
   .segmented-control__input {
