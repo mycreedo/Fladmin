@@ -167,7 +167,7 @@ class Table extends DefaultTable
 				 $table .= "	<div class=\"block__title\">".$heading."</div>\n";
 			 }
 		 }
-		 $table .= "<div class=\"block__scrollable\"><table";
+		 $table .= "<div class=\"block__scrollable dragscroll\"><table";
 		 if(!is_null($class))
 		 {
 			 if(!$class)

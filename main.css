@@ -547,11 +547,14 @@
       background: var(--light);
       padding: 10px  0;
       text-align: center;
+      font-size: 14px;
+
   }
   
   .footer--generation {
       text-align: center;
       margin: 10px;
+      font-size: 14px;
   }
   
   
@@ -883,6 +886,7 @@
       .page-content {
           flex: 1;
           margin-left: 20px;
+          max-width: calc(100% - 320px);
       }
   
       .section-menu__item, .menu li {
@@ -907,6 +911,10 @@
       }
       .float_left {
           float: left;
+      }
+
+      .block__scrollable {
+          overflow: auto;
       }
   
       fieldset[id*="uid"] {
