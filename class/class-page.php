@@ -329,7 +329,10 @@ function output_footer($quit=true)
             </p>
         </div>
         <div class="footer--generation">
-            <p class="wrapper"> {$lang->sprintf($lang->generated_in, $totaltime, $debuglink, $querycount, $memory_usage)} </p>
+            <p class="wrapper"> 
+                Design by <a href="https://mybboard.pl/user-35621.html" target=\"_blank\" title="mybboard.pl">myCreedo</a> - 2018 <br />
+                {$lang->sprintf($lang->generated_in, $totaltime, $debuglink, $querycount, $memory_usage)} 
+            </p>
         </div>
 
 
