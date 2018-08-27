@@ -222,12 +222,8 @@ print <<<EOF
             </aside>
             <main class="page-content">	
 EOF;
-    
-    
-}
-
-
-    
+ 
+}   
     
 function output_nav_tabs($tabs=array(), $active='')
 {
