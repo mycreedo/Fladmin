@@ -152,7 +152,7 @@ class Form extends DefaultForm
 	 function generate_radio_button($name, $value="", $label="", $options=array())
 	 {
 		 
-		 $input .= "<label class=\"radio\"";
+		 $input = "<label class=\"radio\"";
 		 if(isset($options['id']))		$input .= " for=\"{$options['id']}\"";
 
 		 $input .= "><input type=\"radio\" name=\"{$name}\" value=\"".htmlspecialchars_uni($value)."\"";
@@ -179,7 +179,7 @@ class Form extends DefaultForm
  
 	 function generate_check_box($name, $value="", $label="", $options=array())
 	 {
-		 $input .= "<label";
+		 $input = "<label";
 		 if(isset($options['id']))		$input .= " for=\"{$options['id']}\"";
 		 if(isset($options['class']))	$input .= " class=\"label_{$options['class']}\"";
 
@@ -411,7 +411,7 @@ class Form extends DefaultForm
 		 {
 			 $input .= " onclick=\"".str_replace('"', '\"', $options['onclick'])."\"";
 		 }
-		 $input .= "><i class=\"fas fa-check-double button__icon\"></i><span class=\"button__text\">".htmlspecialchars_uni($value)."</span></button>";
+		 $input .= " value=\"".htmlspecialchars_uni($value)."\"><i class=\"fas fa-check-double button__icon\"></i><span class=\"button__text\">".htmlspecialchars_uni($value)."</span></button>";
 		 return $input;
 	 }
  
@@ -435,7 +435,7 @@ class Form extends DefaultForm
 		 {
 			 $input .= " name=\"".$options['name']."\"";
 		 }
-		 $input .= "><i class=\"fas fa-trash-alt button__icon\"></i><span class=\"button__text\">".htmlspecialchars_uni($value)."</span></button>";
+		 $input .= " value=\"".htmlspecialchars_uni($value)."\"><i class=\"fas fa-trash-alt button__icon\"></i><span class=\"button__text\">".htmlspecialchars_uni($value)."</span></button>";
 		 return $input;
 	 }
  

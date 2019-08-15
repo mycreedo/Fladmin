@@ -22,14 +22,16 @@ class PopupMenu extends DefaultPopupMenu
  
 	 function fetch()
 	 {
-		 $popup = "<div class=\"popup_menu\" id=\"{$this->_id}_popup\">\n{$this->_items}</div>\n";
+		 $popup = '<div class="popup__container">';
 		 if($this->_title)
 		 {
 			 $popup .= "<a href=\"javascript:;\" id=\"{$this->_id}\" class=\"popup_button\">{$this->_title}</a>\n";
 		 }
+		 $popup .= "<div class=\"popup_menu\" id=\"{$this->_id}_popup\">\n{$this->_items}</div>\n";
 		 $popup .= "<script type=\"text/javascript\">\n";
 		 $popup .= "$(\"#{$this->_id}\").popupMenu();\n";
 		 $popup .= "</script>\n";
+		 $popup .= "</div>\n";
 		 return $popup;
 	 }
  

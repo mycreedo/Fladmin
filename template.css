@@ -39,10 +39,9 @@ body {
     display: block;
     float: right;
     color: #696969;
-	vertical-align: middle;
 	margin: 2px 3px 0;
     line-height: 100%;
-	font-family: FontAwesome;
+	font-family: 'Font Awesome 5 Free';
 }
 
 html[dir=rtl] .main_tab_close {

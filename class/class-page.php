@@ -35,8 +35,8 @@ function output_header($title="")
     echo "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n";
     echo "  <link href=\"https://fonts.googleapis.com/css?family=Asap:400,600,600i|Open+Sans:300,400,700\" rel=\"stylesheet\">";
     echo "  <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.1.0/css/all.css\" integrity=\"sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt\" crossorigin=\"anonymous\">";
-    echo "	<link rel=\"stylesheet\" href=\"styles/".$this->style."/main.css?ver=1813\" type=\"text/css\" />\n";
-    echo "	<link rel=\"stylesheet\" href=\"styles/".$this->style."/modal.css?ver=1813\" type=\"text/css\" />\n";
+    echo "	<link rel=\"stylesheet\" href=\"styles/".$this->style."/main.css?ver=1821\" type=\"text/css\" />\n";
+    echo "	<link rel=\"stylesheet\" href=\"styles/".$this->style."/modal.css?ver=1821\" type=\"text/css\" />\n";
 
     // Load stylesheet for this module if it has one
     if(file_exists(MYBB_ADMIN_DIR."styles/{$this->style}/{$this->active_module}.css"))
@@ -44,17 +44,17 @@ function output_header($title="")
         echo "	<link rel=\"stylesheet\" href=\"styles/{$this->style}/{$this->active_module}.css\" type=\"text/css\" />\n";
     }
 
-    echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.js?ver=1813\"></script>\n";
-    echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.plugins.min.js?ver=1813\"></script>\n";
-    echo "	<script type=\"text/javascript\" src=\"../jscripts/general.js?ver=1813\"></script>\n";
-    echo "	<script type=\"text/javascript\" src=\"./jscripts/admincp.js\"></script>\n";
+    echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.js?ver=1821\"></script>\n";
+    echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.plugins.min.js?ver=1821\"></script>\n";
+    echo "	<script type=\"text/javascript\" src=\"../jscripts/general.js?ver=1821\"></script>\n";
+    echo "	<script type=\"text/javascript\" src=\"./jscripts/admincp.js?ver=1821\"></script>\n";
     echo "	<script type=\"text/javascript\" src=\"./jscripts/tabs.js\"></script>\n";
     echo "	<script type=\"text/javascript\" src=\"styles/{$this->style}/js/global.js\"></script>\n";
 
     echo "	<link rel=\"stylesheet\" href=\"jscripts/jqueryui/css/redmond/jquery-ui.min.css\" />\n";
     echo "	<link rel=\"stylesheet\" href=\"jscripts/jqueryui/css/redmond/jquery-ui.structure.min.css\" />\n";
     echo "	<link rel=\"stylesheet\" href=\"jscripts/jqueryui/css/redmond/jquery-ui.theme.min.css\" />\n";
-    echo "	<script src=\"jscripts/jqueryui/js/jquery-ui.min.js?ver=1813\"></script>\n";
+    echo "	<script src=\"jscripts/jqueryui/js/jquery-ui.min.js?ver=1821\"></script>\n";
     
     // Stop JS elements showing while page is loading (JS supported browsers only)
     echo "  <style type=\"text/css\">.popup_button { display: none; } </style>\n";
@@ -326,7 +326,7 @@ function output_footer($quit=true)
         </div>
         <div class="footer--generation">
             <p class="wrapper"> 
-                Design by <a href="https://mybboard.pl/user-35621.html" target=\"_blank\" title="mybboard.pl">myCreedo</a> - 2018 <br />
+                Design by <a href="https://mybboard.pl/user-35621.html" target=\"_blank\" title="mybboard.pl">myCreedo</a> – 2018-2019 <br />
                 {$lang->sprintf($lang->generated_in, $totaltime, $debuglink, $querycount, $memory_usage)} 
             </p>
         </div>
